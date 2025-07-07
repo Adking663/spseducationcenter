@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIP Web - Nishu Bhai</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      color: white;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* 🔥 Banner */
+    .banner {
+      width: 100%;
+      padding: 30px 20px;
+      background: linear-gradient(-45deg, #020077, #790d0a, #000000, #a01d03);
+      background-size: 400% 400%;
+      animation: bannerBG 10s ease infinite;
+      text-align: center;
+      border-bottom: 3px solid cyan;
+      box-shadow: 0 5px 20px rgba(0, 255, 255, 0.3);
+    }
+
+    .banner h2 {
+      font-size: 32px;
+      text-shadow: 0 0 8px black;
+    }
+
+    .banner p {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    @keyframes bannerBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* 👤 Glass Profile Card */
+    .profile-card {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+      text-align: center;
+    }
+
+    .profile-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 15px cyan;
+    }
+
+    .profile-card h1 {
+      margin-top: 10px;
+      font-size: 26px;
+    }
+
+    .typing {
+      font-size: 16px;
+      margin: 10px 0;
+      color: #ffeb3b;
+      height: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid #ffeb3b;
+      animation: typing 4s steps(30, end) infinite, blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    .social-links {
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      margin: 0 8px;
+      font-size: 20px;
+      width: 45px;
+      height: 45px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .fa-facebook   { background: #1877f2; }
+    .fa-instagram  { background: #e4405f; }
+    .fa-youtube    { background: #ff0000; }
+    .fa-twitter    { background: #1da1f2; }
+    .fa-linkedin   { background: #0077b5; }
+    .fa-whatsapp   { background: #25d366; }
+
+    .social-links a:hover {
+      transform: scale(1.3);
+      box-shadow: 0 0 15px white;
+    }
+
+    .welcome {
+      margin: 30px 0 15px;
+      font-size: 22px;
+      text-align: center;
+      animation: fadeIn 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0.2; }
+      100% { opacity: 1; }
+    }
+
+    .buttons {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 16px;
+      color: #ffeb3b;
+      margin-top: 20px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: cyan;
+      color: black;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 15px cyan;
+      transition: 0.3s;
+    }
+
+    .buttons a:hover {
+      background: white;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .profile-card {
+        margin: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔥 Banner -->
+  <div class="banner">
+    <h2>🔥 Welcome To Students 🔥</h2>
+    <p>My official BESB Webside </p>
+  </div>
+
+  <!-- 🧊 Profile Card -->
+  <div class="profile-card">
+    <img src="NISHU.jpeg" alt="Profile" />
+    <h1>Dharmendra Kumar</h1>
+    <div class="typing">I am student | Webside Creater | AI user </div>
+
+    <div class="social-links">
+      <a href="https://instagram.com/adjaanbhai" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/ADJAANBHAI?mibextid=JRoKGi" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.youtube.com/@codingstudent-k7n" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://wa.me/919608696210" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <!-- 👋 Welcome Text -->
+  <div class="welcome">CHECK 12TH And 10TH Dummy Card</div>
+
+  <!-- 📄 Dummy Links -->
+  <div class="buttons">
+    <div class="section-title">12TH DUMMY REGISTRATION CARD FOR SESSION 2024-26</div>
+    <a href="https://ssonline.biharboardonline.com/">CHECK </a>
+    <div class="section-title">10TH DUMMY REGISTRATION CARD FOR SESSION 2025-26</div>
+    <a href="https://regsecondary.biharboardonline.com/Reg25/SearchReg.html#">CHECK</a>
+  </div>
+
+</body>
+</html>
